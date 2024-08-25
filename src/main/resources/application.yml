@@ -1,0 +1,31 @@
+spring:
+  application:
+    name: order-service
+
+  jpa:
+    database: POSTGRESQL
+    properties:
+      hibernate.default_schema: application
+    hibernate:
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.CamelCaseToUnderscoresNamingStrategy
+      ddl-auto: update
+    show-sql: true
+
+  datasource:
+    hikari:
+      username: postgres
+      password: postgres
+      driver-class-name: org.postgresql.Driver
+      auto-commit: true
+    url: jdbc:postgresql://localhost:5432/order-service
+
+server:
+  port: 8089
+
+axon:
+  axonserver:
+    enabled: false
+
+
+
