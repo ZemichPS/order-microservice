@@ -5,6 +5,7 @@ import by.zemich.order_service.domain.model.valueobjects.OrderStatus;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.ToString;
+import org.axonframework.eventhandling.EventMessage;
 import org.axonframework.modelling.command.TargetAggregateIdentifier;
 
 import java.time.LocalDateTime;

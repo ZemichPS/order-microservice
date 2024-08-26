@@ -5,6 +5,7 @@ import org.axonframework.commandhandling.CommandBus;
 import org.axonframework.commandhandling.SimpleCommandBus;
 import org.axonframework.commandhandling.gateway.CommandGateway;
 import org.axonframework.commandhandling.gateway.DefaultCommandGateway;
+import org.axonframework.config.ConfigurerModule;
 import org.axonframework.eventsourcing.eventstore.EmbeddedEventStore;
 import org.axonframework.eventsourcing.eventstore.EventStore;
 import org.springframework.context.annotation.Bean;
@@ -24,6 +25,7 @@ public class AxonRoutingConfig {
                 .commandBus(commandBus)
                 .build();
     }
+
 
 
 }
